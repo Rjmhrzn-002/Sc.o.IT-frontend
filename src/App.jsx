@@ -1,15 +1,16 @@
 import { useEffect, useState } from "react";
 // import Login from "./pages/auth/Login";
-import Button from "./components/button/Button";
+// import Button from "./components/button/Button";
 // import Modal from "./components/modal/Modal";
 // import Counter from "./components/task/counter";
 import ProductCard from "./components/card/ProductCard";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
     <>
       <div className=" h-screen flex justify-center items-center  ">
-        <ProductCard></ProductCard>
+        <Footer></Footer>
       </div>
     </>
   );
@@ -17,6 +18,7 @@ function App() {
 
 export default App;
 
+// <ProductCard></ProductCard>
 // modal={
 
 //   /* <Modal isVisible={isVisible}
