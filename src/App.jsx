@@ -5,19 +5,23 @@ import { useEffect, useState } from "react";
 // import Counter from "./components/task/counter";
 import ProductCard from "./components/card/ProductCard";
 import Footer from "./components/Footer/Footer";
+import MainRoutes from "./navigation/MainRoute";
+import Home from "./pages/home/Home";
 
 function App() {
   return (
     <>
-      <div className=" h-screen flex justify-center items-center  ">
-        <Footer></Footer>
-      </div>
+      {/* <Home></Home> */}
+      <MainRoutes />
     </>
   );
 }
 
 export default App;
 
+// <div className=" h-screen flex justify-center items-center  ">
+//   <Footer></Footer>
+// </div>
 // <ProductCard></ProductCard>
 // modal={
 

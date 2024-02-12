@@ -32,3 +32,7 @@ const Modal = ({ isVisible, onModalClose, children }) => {
 };
 
 export default Modal;
+
+//   /* <Modal isVisible={isVisible}
+// onModalClose={() => setVisible(false)}
+// ></Modal>

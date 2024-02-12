@@ -1,5 +1,4 @@
-const Button = (props) => {
-  const { title, onClick, ...remainingProps } = props;
+const Button = ({ title, onClick, ...remainingProps }) => {
   return (
     <>
       <button
