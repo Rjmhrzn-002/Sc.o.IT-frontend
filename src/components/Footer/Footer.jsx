@@ -9,7 +9,7 @@ import {
 const Footer = () => {
   return (
     <>
-      <div className="w-screen bg-primary absolute bottom-0 text-white rounded-tr-3xl cursor-default">
+      <div className="w-screen bg-primary  text-white rounded-tr-3xl cursor-default">
         <div className="max-w-[1280px] mx-auto flex flex-col px-2">
           <div className="flex items-start py-20 ">
             {/* Company-logo */}
@@ -68,6 +68,7 @@ const Footer = () => {
                 <FaLinkedin className=""></FaLinkedin>
               </div>
             </div>
+            {/* Copywrite text */}
             <div className="text-secondary font-semibold">
               {new Date().getFullYear()} &copy; Copyright. All rights reserved
             </div>
