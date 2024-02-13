@@ -7,12 +7,14 @@ import ProductCard from "./components/card/ProductCard";
 import Footer from "./components/Footer/Footer";
 import MainRoutes from "./navigation/MainRoute";
 import Home from "./pages/home/Home";
+import ProductProfile from "./pages/product/ProductProfile";
 
 function App() {
   return (
     <>
       {/* <Home></Home> */}
       <MainRoutes />
+      {/* <ProductProfile></ProductProfile> */}
     </>
   );
 }
@@ -25,9 +27,6 @@ export default App;
 // <ProductCard></ProductCard>
 // modal={
 
-//   /* <Modal isVisible={isVisible}
-// onModalClose={() => setVisible(false)}
-// ></Modal>
 // /* <Button title={title} onClick={() => setVisible(true)} />  }*/
 
 /* <Counter />; */
