@@ -9,11 +9,12 @@ import {
 const Footer = () => {
   return (
     <>
-      <div className="w-screen bg-primary  text-white rounded-tr-3xl cursor-default">
+      <div className="w-full bg-primary  text-white rounded-tr-3xl cursor-default mt-8 shadow-2xl overflow-hidden">
+
         <div className="max-w-[1280px] mx-auto flex flex-col px-2">
           <div className="flex items-start py-20 ">
             {/* Company-logo */}
-            <div className="text-left px-20 bg-red-500">
+            <div className="text-left px-20 ">
               <h1 className="font-extrabold text-4xl uppercase text-secondary cursor-pointer">
                 LOGO
               </h1>
