@@ -10,7 +10,7 @@ const Home = () => {
   // };
   return (
     <>
-      <div>
+      <div className="h-[90vh]">
         <Link to="/">
           <Button title="Home"></Button>
         </Link>
