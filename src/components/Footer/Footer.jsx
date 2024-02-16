@@ -10,6 +10,7 @@ const Footer = () => {
   return (
     <>
       <div className="w-full bg-primary  text-white rounded-tr-3xl cursor-default mt-8 shadow-2xl overflow-hidden">
+
         <div className="max-w-[1280px] mx-auto flex flex-col px-2">
           <div className="flex items-start py-20 ">
             {/* Company-logo */}
@@ -68,6 +69,7 @@ const Footer = () => {
                 <FaLinkedin className=""></FaLinkedin>
               </div>
             </div>
+            {/* Copywrite text */}
             <div className="text-secondary font-semibold">
               {new Date().getFullYear()} &copy; Copyright. All rights reserved
             </div>

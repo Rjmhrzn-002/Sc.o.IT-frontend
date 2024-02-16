@@ -5,25 +5,28 @@ import { useEffect, useState } from "react";
 // import Counter from "./components/task/counter";
 import ProductCard from "./components/card/ProductCard";
 import Footer from "./components/Footer/Footer";
+import MainRoutes from "./navigation/MainRoute";
+import Home from "./pages/home/Home";
+import ProductProfile from "./pages/product/ProductProfile";
 
 function App() {
   return (
     <>
-      <div className=" h-screen flex justify-center items-center  ">
-        <Footer></Footer>
-      </div>
+      {/* <Home></Home> */}
+      <MainRoutes />
+      {/* <ProductProfile></ProductProfile> */}
     </>
   );
 }
 
 export default App;
 
+// <div className=" h-screen flex justify-center items-center  ">
+//   <Footer></Footer>
+// </div>
 // <ProductCard></ProductCard>
 // modal={
 
-//   /* <Modal isVisible={isVisible}
-// onModalClose={() => setVisible(false)}
-// ></Modal>
 // /* <Button title={title} onClick={() => setVisible(true)} />  }*/
 
 /* <Counter />; */
