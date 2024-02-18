@@ -13,14 +13,4 @@ const Home = () => {
 
 export default Home;
 
-{
-  /* <section>
-  const navigate = useNavigate();
-  // method 1 
-  <Link to="/product">
-    <Button title="Product"></Button>
-    </Link>
-    // method 2 
-    <Button title="Contact" onClick={() => navigate("/product")}></Button>
-    </section> */
-}
+
