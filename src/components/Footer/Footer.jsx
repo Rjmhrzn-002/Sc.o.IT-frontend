@@ -5,17 +5,23 @@ import {
   FaGoogle,
   FaLinkedin,
 } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
   return (
     <>
-      <div className="w-full bg-primary  text-white rounded-tr-3xl cursor-default mt-8 shadow-2xl overflow-hidden">
-
+      <div className="w-full bg-gradient-to-tr from-secondary via-secondary  to-primary text-white rounded-tr-3xl cursor-default mt-8 shadow-2xl overflow-hidden">
         <div className="max-w-[1280px] mx-auto flex flex-col px-2">
           <div className="flex items-start py-20 ">
             {/* Company-logo */}
             <div className="text-left px-20 ">
-              <h1 className="font-extrabold text-4xl uppercase text-secondary cursor-pointer">
+              <h1
+                className="font-extrabold text-4xl uppercase text-primary cursor-pointer"
+                onClick={() => {
+                  navigate("/product");
+                }}
+              >
                 LOGO
               </h1>
               <p className="font-semibold text-lg uppercase">XYZ-XXX Company</p>
@@ -70,7 +76,7 @@ const Footer = () => {
               </div>
             </div>
             {/* Copywrite text */}
-            <div className="text-secondary font-semibold">
+            <div className="text-primary font-semibold">
               {new Date().getFullYear()} &copy; Copyright. All rights reserved
             </div>
           </div>

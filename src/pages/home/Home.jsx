@@ -1,37 +1,26 @@
-import { Link, useNavigate } from "react-router-dom";
-import Button from "../../components/button/Button";
-import ProductCard from "../../components/card/ProductCard";
-
 const Home = () => {
-  const navigate = useNavigate();
-
-  // const navigateServ = () => {
-  //   navigate("/service");
-  // };
   return (
     <>
-      <div className="h-[90vh]">
-        <Link to="/">
-          <Button title="Home"></Button>
-        </Link>
-
-        {/* <Link to="/service"> */}
-        <Button
-          title="Service"
-          onClick={() => {
-            navigate("/service/10");
-          }}
-        ></Button>
-        {/* </Link> */}
-        <Link to="/contact">
-          <Button title="Contact"></Button>
-        </Link>
-        <Link to="/product">
-          <Button title="Product"></Button>
-        </Link>
+      <div
+        className="bg-cover bg-center w-full max-w-[1400px] mx-auto h-[85vh] text-center md:text-right"
+        style={{ backgroundImage: "url('/assets/purpleSunset.jpg')" }}
+      >
+        <div className="mx-auto max-w-[1280px] my-8 px-4 py-8 w-max rounded-xl text-white uppercase font-extrabold font-lexend-deca  "></div>
       </div>
     </>
   );
 };
 
 export default Home;
+
+{
+  /* <section>
+  const navigate = useNavigate();
+  // method 1 
+  <Link to="/product">
+    <Button title="Product"></Button>
+    </Link>
+    // method 2 
+    <Button title="Contact" onClick={() => navigate("/product")}></Button>
+    </section> */
+}
