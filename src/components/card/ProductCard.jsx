@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { FaRegStar } from "react-icons/fa";
 
+
 const ProductCard = ({ id }) => {
   const [product, setProduct] = useState();
   const navigate = useNavigate();
@@ -31,6 +32,7 @@ const ProductCard = ({ id }) => {
             </p>
           </div>
           <div className=" border-b-2 w-full flex justify-center h-36 p-4">
+
             <img src={product.image} alt="product" className="h-full" />
           </div>
           <div className="text-left p-4">
