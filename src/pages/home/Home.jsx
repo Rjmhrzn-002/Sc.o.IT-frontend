@@ -2,16 +2,9 @@ import FeatureProduct from "./FeatureProducts";
 import ExploreNew from "./ExploreNew";
 import Banner from "../../components/banner/banner";
 
-
 const Home = () => {
   return (
-    <>
-      <div className="bg-red-600 w-full max-w-[1400px] max-h-[1020px] mx-auto text-center md:text-right">
-        <img
-          src="/public/assets/heroBanner.jpg"
-          alt="heroSectionImage"
-          className="h-full w-full object-contain "
-        />
+    <div>
       <div className="bg-red-600 w-full max-w-[1400px] max-h-[1020px] mx-auto text-center md:text-right">
         <img
           src="/public/assets/heroBanner.jpg"
@@ -29,7 +22,7 @@ const Home = () => {
         bgColor="yellow"
         url="https://assets.materialup.com/uploads/6ec43bb8-d7b1-4e1d-9f44-68f7fcb817b5/attachment.jpg"
       />
-    </>
+    </div>
   );
 };
 
