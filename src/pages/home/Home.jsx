@@ -13,9 +13,15 @@ const Home = () => {
         />
       </div>
       <FeatureProduct />
-      <Banner url="https://static.vecteezy.com/system/resources/thumbnails/004/707/493/small/online-shopping-on-phone-buy-sell-business-digital-web-banner-application-money-advertising-payment-ecommerce-illustration-search-vector.jpg" />
+      <Banner
+        bgColor="zinc"
+        url="https://static.vecteezy.com/system/resources/thumbnails/004/707/493/small/online-shopping-on-phone-buy-sell-business-digital-web-banner-application-money-advertising-payment-ecommerce-illustration-search-vector.jpg"
+      />
       <ExploreNew />
-      <Banner url="https://assets.materialup.com/uploads/6ec43bb8-d7b1-4e1d-9f44-68f7fcb817b5/attachment.jpg" />
+      <Banner
+        bgColor="yellow"
+        url="https://assets.materialup.com/uploads/6ec43bb8-d7b1-4e1d-9f44-68f7fcb817b5/attachment.jpg"
+      />
     </>
   );
 };
