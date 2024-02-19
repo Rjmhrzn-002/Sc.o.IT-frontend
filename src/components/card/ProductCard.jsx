@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { FaRegStar, FaStar } from "react-icons/fa";
+import { FaRegStar } from "react-icons/fa";
 
 const ProductCard = ({ id }) => {
   const [product, setProduct] = useState();
@@ -30,14 +30,14 @@ const ProductCard = ({ id }) => {
               NEW
             </p>
           </div>
-          <div className=" border-b-2 w-full flex justify-center h-40 p-4">
+          <div className=" border-b-2 w-full flex justify-center h-36 p-4">
             <img src={product.image} alt="product" className="h-full" />
           </div>
           <div className="text-left p-4">
-            <h2 className="font-bold text-2xl uppercase line-clamp-2">
+            <h2 className="font-bold text-xl uppercase line-clamp-2">
               {product.title}
             </h2>
-            <p className="text-zinc-500 text-lg font-semibold line-clamp-1">
+            <p className="text-zinc-500 text-md font-semibold line-clamp-1">
               {product.description}
             </p>
             <p className="text-red-600 font-semibold ">{product.price}</p>

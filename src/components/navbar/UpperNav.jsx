@@ -2,7 +2,7 @@ import { FaInstagram, FaFacebook, FaTwitter, FaPhoneAlt } from "react-icons/fa";
 const UpperNav = () => {
   return (
     <>
-      <div className="w-full bg-zinc-200 border border-b-primary opacity-80 ">
+      <div className="w-full bg-zinc-200 border border-b-primary ">
         <div className="flex items-center justify-between max-w-[1280px] mx-auto px-5">
           <div className="flex items-center gap-2">
             <FaPhoneAlt></FaPhoneAlt>

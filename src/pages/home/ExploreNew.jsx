@@ -1,14 +1,13 @@
 import SectionTitle from "../../components/Typography/SectionTitle";
 import ProductCard from "../../components/card/ProductCard";
-
-const FeatureProduct = () => {
+const ExploreNew = () => {
   return (
     <div className="w-full bg-white">
       <div className="mx-auto max-w-[1280px] ">
-        <SectionTitle title="Featured Products" />
-        <div className=" mx-4 md:mx-auto max-w-[1080px] grid grid-cols-2 gap-4 md:grid-cols-4">
+        <SectionTitle title="Explore New" />
+        <div className=" mx-4 md:mx-auto max-w-[980px] grid grid-cols-2 gap-4 md:grid-cols-4">
           {Array.from({ length: 8 }, (_, index) => {
-            return <ProductCard key={index} id={index + 1} />;
+            return <ProductCard key={index} id={index + 9} />;
           })}
         </div>
       </div>
@@ -16,4 +15,4 @@ const FeatureProduct = () => {
   );
 };
 
-export default FeatureProduct;
+export default ExploreNew;
