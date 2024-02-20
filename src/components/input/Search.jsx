@@ -1,4 +1,4 @@
-const Input = () => {
+const Search = () => {
   return (
     <>
       <input
@@ -10,4 +10,4 @@ const Input = () => {
   );
 };
 
-export default Input;
+export default Search;
