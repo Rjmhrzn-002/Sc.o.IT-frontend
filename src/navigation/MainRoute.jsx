@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router";
 import Contact from "../pages/contactus/Contact";
 import Home from "../pages/home/Home";
-import Service from "../pages/Services/Service";
+import Service from "../pages/services/Service";
 import Footer from "../components/Footer/Footer";
 import ProductProfile from "../pages/product/ProductProfile";
 import Navbar from "../components/navbar/Navbar";
@@ -14,7 +14,7 @@ const MainRoutes = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        <Route path="/service/:productId" element={<Service />}></Route>
+        <Route path="/service" element={<Service />}></Route>
         <Route path="/contact" element={<Contact />} />
         <Route path="/product" element={<Product />}></Route>
         <Route path="/product/:id" element={<ProductProfile />}></Route>

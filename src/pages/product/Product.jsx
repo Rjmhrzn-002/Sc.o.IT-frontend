@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import ProductCard from "../../components/card/ProductCard";
+// import ProductCard from "../../components/card/ProductCard";
 import NewProduct from "../../components/card/NewProduct";
 import Banner from "../../components/banner/Banner";
 import Button from "../../components/button/Button";
@@ -16,7 +16,7 @@ const Product = () => {
         const response = await fetch("https://fakestoreapi.com/products");
         const json = await response.json();
         setProductList(json);
-        setFilter(json);
+        // setFilter(json);
         console.log(productList);
       } catch (error) {
         console.log(error);
@@ -38,7 +38,7 @@ const Product = () => {
     e.preventDefault();
     console.log("submit btn clicked");
   };
-  console.log(filteredData);
+  // console.log(filteredData);
   return (
     <>
       <div className="w-full max-w-[1280px] mx-auto my-2 flex flex-col items-center justify-center gap-4 ">
