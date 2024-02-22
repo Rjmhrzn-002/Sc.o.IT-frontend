@@ -1,20 +1,31 @@
-import { useNavigate, useParams } from "react-router";
-import Button from "../../components/button/Button";
+import { services } from "./services";
 
 const Service = () => {
-  const navigate = useNavigate();
-  const path = useParams();
-  console.log(path.productId);
-
   return (
-    <>
-      <Button
-        title="home"
-        onClick={() => {
-          navigate("/");
-        }}
-      ></Button>
-    </>
+    <div className="w-full">
+      <div className="max-w-[1080px] mx-2 md:mx-auto flex flex-col items-center">
+        <h1 className="px-20 py-4 my-6 w-max text-3xl uppercase font-bold text-primary border-2 border-primary">
+          Our Services
+        </h1>
+        <div className="flex flex-col md:flex-row justify-between items-center gap-4 my-12">
+          {services.map((service) => {
+            return (
+              <div
+                key={service.id}
+                className="max-w-96  flex-1 flex flex-col text-center min-h-56 bg-[#212121]  rounded-md overflow-hidden"
+              >
+                <h2 className="text-lg font-semibold p-4 bg-primary text-white">
+                  {service.title}
+                </h2>
+                <p className="flex-1 text-justify py-2 px-4 text-white">
+                  {service.description}
+                </p>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </div>
   );
 };
 

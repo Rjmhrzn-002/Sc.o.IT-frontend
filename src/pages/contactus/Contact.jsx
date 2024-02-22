@@ -8,12 +8,12 @@ const Contact = () => {
           Tell us want you want to shop...
         </h2>
       </div>
-      <div className=" w-full bg-zinc-100 flex flex-col items-center">
-        <div className=" max-w-[1280px] mx-2 md:mx-auto">
-          <h2 className="w-full uppercase font-semibold text-xl text-zinc-700 ">
-            Get in Touch
-          </h2>
-          <form className="grid grid-cols-3 gap-4 w-full py-8">
+      <div className="bg-zinc-100 flex flex-col items-center">
+        <h2 className="w-full uppercase text-center py-3 font-semibold text-2xl bg-primary text-white ">
+          Get in Touch
+        </h2>
+        <div className="w-full max-w-[1080px] mx-4 md:mx-auto">
+          <form className="grid md:grid-cols-3 gap-4 w-full py-8 px-4 md:px-2 grid-cols-2">
             <div className="flex items-center relative">
               <FaUser color="gray" className="absolute left-3"></FaUser>
               <input
