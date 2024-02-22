@@ -1,6 +1,6 @@
 import FeatureProduct from "./FeatureProducts";
 import ExploreNew from "./ExploreNew";
-import Banner from "../../components/banner/banner";
+import Banner from "../../components/banner/Banner";
 import HeroBanner from "./Hero";
 
 const Home = () => {

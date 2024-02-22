@@ -1,11 +1,13 @@
 const Banner = ({ url, bgColor }) => {
   return (
-    <div className="w-full min-w-[2460px]   my-12 h-96 ">
+    <div
+      className="w-full mx-auto my-12 h-96 "
+      style={{ backgroundColor: bgColor }}
+    >
       <img
         src={url}
-        className={`w-full mx-auto  h-full object-contain `}
+        className={`w-full mx-auto max-w-[1280px]  h-full object-contain `}
         alt="banner"
-        style={{ backgroundColor: bgColor }}
       />
     </div>
   );

@@ -13,7 +13,7 @@ const Footer = () => {
     <>
       <div className="w-full bg-gradient-to-tr from-secondary via-secondary  to-primary text-white rounded-tr-3xl cursor-default mt-8 shadow-2xl overflow-hidden">
         <div className="max-w-[1280px] mx-auto flex flex-col px-2">
-          <div className="flex items-start py-20 ">
+          <div className="flex flex-col md:flex-row justify-center items-center md:items-start py-20 gap-6 ">
             {/* Company-logo */}
             <div className="text-left px-20 ">
               <h1
@@ -27,7 +27,7 @@ const Footer = () => {
               <p className="font-semibold text-lg uppercase">XYZ-XXX Company</p>
             </div>
             {/* Footer-nav */}
-            <div className=" flex-1 flex items-start justify-evenly font-semibold  ">
+            <div className=" w-full flex-1 flex items-start justify-evenly font-semibold  ">
               <ul className="cursor-pointer">
                 <li>Themes Tweeks</li>
                 <li>Weekly Themes</li>
