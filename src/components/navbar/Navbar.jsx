@@ -1,12 +1,12 @@
 import { CgClose, CgMenuRightAlt } from "react-icons/cg";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink, Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { navdata } from "./navdata.js";
 import UpperNav from "./UpperNav.jsx";
 import "./navbar.css";
 
 const Navbar = () => {
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
   const [openDrawer, setDrawer] = useState(false);
 
   const handleNavClick = () => {
@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="w-full shadow-md md:relative">
+      <div className="w-full shadow-md md:relative ">
         {!openDrawer && <UpperNav />}
         <div className="max-w-[1280px] mx-auto ">
           {/* desktop-navbar */}
@@ -24,7 +24,10 @@ const Navbar = () => {
             {/* desktop-logo */}
             <div className="flex items-center gap-2">
               <div className="w-10 h-10 bg-primary rounded-full"></div>
-              <div className="uppercase font-bold text-2xl tex text-primary">
+              <div
+                className="uppercase font-bold text-2xl tex text-primary cursor-pointer"
+                onClick={() => navigate("/")}
+              >
                 Logo
               </div>
             </div>
@@ -49,7 +52,7 @@ const Navbar = () => {
           >
             {/* mobile-nav-logo-Hamburger */}
             <div
-              className={`  flex justify-between items-center h-20 w-full bg-white z-30 ${
+              className={` px-4  flex justify-between items-center h-20 w-full bg-white z-30 ${
                 openDrawer ? "fixed" : "relative"
               }`}
             >
