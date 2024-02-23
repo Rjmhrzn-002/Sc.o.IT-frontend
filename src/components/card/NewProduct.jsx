@@ -13,7 +13,7 @@ const NewProduct = ({ product }) => {
           onClick={() => navigate(`/product/${product.id}`)}
         >
           <div className="p-4">
-            <p className="py-1 px-3 bg-blue-800 text-white text-xs font-bold rounded-md">
+            <p className="py-1 px-3 bg-blue-900 text-white text-xs font-semibold shadow-xl rounded-md">
               NEW
             </p>
           </div>
