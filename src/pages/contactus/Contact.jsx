@@ -10,6 +10,7 @@ const Contact = () => {
       </div>
       <div className="bg-zinc-100 flex flex-col items-center">
         <h2 className="cursor-default w-full uppercase text-center py-3 font-semibold text-2xl bg-primary text-white ">
+
           Get in Touch
         </h2>
         <div className="w-full max-w-[1080px] mx-4 md:mx-auto">

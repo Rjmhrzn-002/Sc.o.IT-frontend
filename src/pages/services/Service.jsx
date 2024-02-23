@@ -17,7 +17,9 @@ const Service = () => {
                 <h2 className="text-lg font-semibold p-4 bg-primary text-white">
                   {service.title}
                 </h2>
+
                 <p className="flex-1 text-justify py-2 px-8 text-white">
+
                   {service.description}
                 </p>
               </div>
