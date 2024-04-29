@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router";
 import Contact from "../pages/contactus/Contact";
 import Home from "../pages/home/Home";
 import Service from "../pages/services/Service";
+import Service from "../pages/services/Service";
 import Footer from "../components/Footer/Footer";
 import ProductProfile from "../pages/product/ProductProfile";
 import Navbar from "../components/navbar/Navbar";

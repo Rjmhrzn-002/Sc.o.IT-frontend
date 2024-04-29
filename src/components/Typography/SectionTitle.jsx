@@ -2,6 +2,10 @@
 import { Link } from "react-router-dom";
 import "./section.css";
 
+// import { useEffect } from "react";
+import { Link } from "react-router-dom";
+import "./section.css";
+
 const SectionTitle = ({ title }) => {
   // useEffect(() => {
   //   const viewContainer = document.querySelector("#view--container");
