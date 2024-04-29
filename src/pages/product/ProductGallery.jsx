@@ -1,5 +1,5 @@
 import { useState } from "react";
-const ProductGallery = () => {
+const ProductGallery = ({ productImage }) => {
   const imgs = [
     {
       id: 1,
@@ -25,12 +25,13 @@ const ProductGallery = () => {
       <div className="w-full min-h-screen md:min-h-0 md:h-full flex flex-col md:flex-row justify-center items-center flex-1 border-2 rounded-md overflow-hidden ">
         <div className="xs:w-full  md:w-full overflow-hidden md:rounded-md flex-1 ">
           <img
-            src={imgs[activeImg].url}
+            src={productImage}
+            // src={imgs[activeImg].url}
             alt="Image"
             className="min-w-full h-full object-cover"
           />
         </div>
-        <div className="flex md:flex-col h-full w-full justify-evenly basis-1/4 gap-3 border-t-2 md:border-t-0 md:border-l-2  p-4 ">
+        {/* <div className="flex md:flex-col h-full w-full justify-evenly basis-1/4 gap-3 border-t-2 md:border-t-0 md:border-l-2  p-4 ">
           {imgs.map((img, index) => {
             return (
               <div
@@ -50,7 +51,7 @@ const ProductGallery = () => {
               </div>
             );
           })}
-        </div>
+        </div> */}
       </div>
     </>
   );

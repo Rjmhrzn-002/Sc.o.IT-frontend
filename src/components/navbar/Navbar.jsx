@@ -1,9 +1,10 @@
 import { CgClose, CgMenuRightAlt } from "react-icons/cg";
 import { NavLink, Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
-import { navdata } from "./navdata.js";
+import { navdata } from "./navdata.jsx";
 import UpperNav from "./UpperNav.jsx";
 import "./navbar.css";
+import { FaShoppingCart } from "react-icons/fa";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -13,6 +14,8 @@ const Navbar = () => {
     // window.screenY === 0;
     setDrawer(false);
   };
+
+  const cartList = JSON.parse(localStorage.getItem("cartItem"));
 
   return (
     <>
@@ -42,6 +45,15 @@ const Navbar = () => {
                   {nav.title}
                 </NavLink>
               ))}
+              <p
+                className=" relative p-2 rounded-md cursor-pointer"
+                onClick={() => navigate("/myCart")}
+              >
+                <FaShoppingCart size={25} color="white" />
+                <span className=" absolute top-0 -right-2 py-1 px-2 text-xs bg-red-500 rounded-full flex items-center justify-center">
+                  {cartList?.length ?? 0}
+                </span>
+              </p>
             </div>
           </div>
           {/* mobile-navbar */}
