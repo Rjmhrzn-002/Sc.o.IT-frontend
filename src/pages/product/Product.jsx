@@ -4,20 +4,19 @@ import React, { useEffect, useState } from "react";
 import NewProduct from "../../components/card/NewProduct";
 import Banner from "../../components/banner/Banner";
 import Button from "../../components/button/Button";
+import { getProducts } from "../../services/apiService";
 
 const Product = () => {
   const [searchData, setSearchData] = useState("");
   const [productList, setProductList] = useState([]);
+  const limit = 20;
   // const [filteredData, setFilter] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("https://fakestoreapi.com/products");
-        const json = await response.json();
-        setProductList(json);
-        // setFilter(json);
-        console.log(productList);
+        let response = await getProducts({});
+        setProductList(response.data.products);
       } catch (error) {
         console.log(error);
         throw new Error(error.message);
@@ -56,7 +55,7 @@ const Product = () => {
         </form>
         <div className="mx-4 md:mx-auto max-w-[1080px] grid grid-cols-2 md:grid-cols-4  gap-4">
           {filteredData.map((product) => {
-            return <NewProduct product={product} key={product.id} />;
+            return <NewProduct product={product} key={product._id} />;
           })}
         </div>
         <Banner

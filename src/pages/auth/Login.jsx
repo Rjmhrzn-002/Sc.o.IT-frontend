@@ -4,7 +4,7 @@ const Login = () => {
   };
 
   return (
-    <section className="min-w-md  py-10 px-6 bg-gradient-to-br from-secondary to-primary rounded-xl shadow-xl shadow-zinc-600">
+    <section className="min-w-md w-screen h-screen py-10 px-6 bg-gradient-to-br from-secondary to-primary rounded-xl shadow-xl shadow-zinc-600">
       <form onSubmit={handleSubmit} className="space-y-8">
         <div className="flex flex-col">
           <label

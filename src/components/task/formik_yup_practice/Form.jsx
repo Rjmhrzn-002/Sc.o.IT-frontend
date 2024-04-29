@@ -1,7 +1,7 @@
 import { Formik, Form } from "formik";
 import { defaultFormValue, formSchema } from "./formSchema";
-import Input from "./components/input/Input";
-import Button from "./components/button/Button";
+import Input from "../../input/Input";
+import Button from "../../button/Button";
 
 const FormExample = () => {
   const handleFormSubmit = (values) => {
@@ -23,7 +23,7 @@ const FormExample = () => {
             handleChange,
             handleSubmit,
           }) => {
-            console.log(values);
+            // console.log(values);
             return (
               <Form onSubmit={handleFormSubmit}>
                 <Input

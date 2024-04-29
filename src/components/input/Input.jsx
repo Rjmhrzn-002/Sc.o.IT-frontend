@@ -1,5 +1,5 @@
 const Input = (props) => {
-  console.log(props);
+  // console.log(props);
   return (
     <div className="flex-1">
       <input

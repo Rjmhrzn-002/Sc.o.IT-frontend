@@ -1,30 +1,15 @@
-import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { FaRegStar } from "react-icons/fa";
 
-
-const ProductCard = ({ id }) => {
-  const [product, setProduct] = useState();
+const ProductCard = ({ product }) => {
   const navigate = useNavigate();
-
-  const fetchProduct = async () => {
-    fetch(`https://fakestoreapi.com/products/${id}`)
-      .then((res) => res.json())
-      .then((json) => setProduct(json));
-  };
-
-  useEffect(() => {
-    setTimeout(() => {
-      fetchProduct();
-    }, [product]);
-  }, 2000);
 
   return (
     <>
       {product && (
         <section
-          className="flex flex-col items-start w-full  shadow-lg shadow-zinc-400 rounded-lg cursor-pointer overflow-hidden"
-          onClick={() => navigate(`/product/${id}`)}
+          className="flex flex-col items-start w-full  shadow-md shadow-zinc-400 bg-white rounded-[4px] cursor-pointer overflow-hidden"
+          onClick={() => navigate(`/product/${product._id}`)}
         >
           <div className="p-4">
             <p className="py-1 px-3 bg-blue-800 text-white text-xs font-bold rounded-md">
@@ -32,8 +17,7 @@ const ProductCard = ({ id }) => {
             </p>
           </div>
           <div className=" border-b-2 w-full flex justify-center h-36 p-4">
-
-            <img src={product.image} alt="product" className="h-full" />
+            <img src={product?.image} alt="product" className="h-full" />
           </div>
           <div className="text-left p-4">
             <h2 className="font-bold text-xl uppercase line-clamp-2">
@@ -54,7 +38,7 @@ const ProductCard = ({ id }) => {
             <FaRegStar></FaRegStar>
             <FaRegStar></FaRegStar> */}
               </div>
-              <span>({product.rating.count})</span>
+              {/* <span>({product.rating.count})</span> */}
             </div>
           </div>
         </section>

@@ -26,12 +26,12 @@ const SectionTitle = ({ title }) => {
         <Link
           id="view--container"
           to="/product"
-          className=" border border-red-600 px-3 py-1 relative overflow-hidden"
+          className=" border border-[#62287C] px-3 py-1 relative overflow-hidden"
         >
           <p className="relative">View all</p>
           <div
             id="inner--circle"
-            className="w-3 h-3 bg-red-600 rounded-full absolute -top-2 -left-2"
+            className="w-3 h-3 bg-[#62287C] rounded-full absolute -top-2 -left-2"
           ></div>
         </Link>
       </div>

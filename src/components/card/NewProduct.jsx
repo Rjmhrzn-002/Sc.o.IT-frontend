@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { FaRegStar } from "react-icons/fa";
 
@@ -10,7 +10,7 @@ const NewProduct = ({ product }) => {
       {product && (
         <section
           className="flex flex-col items-start w-full  shadow-lg shadow-zinc-400 rounded-lg cursor-pointer overflow-hidden"
-          onClick={() => navigate(`/product/${product.id}`)}
+          onClick={() => navigate(`/product/${product._id}`)}
         >
           <div className="p-4">
             <p className="py-1 px-3 bg-blue-900 text-white text-xs font-semibold shadow-xl rounded-md">
@@ -39,7 +39,7 @@ const NewProduct = ({ product }) => {
             <FaRegStar></FaRegStar>
             <FaRegStar></FaRegStar> */}
               </div>
-              <span>({product.rating.count})</span>
+              {/* <span>({product.rating.count})</span> */}
             </div>
           </div>
         </section>
